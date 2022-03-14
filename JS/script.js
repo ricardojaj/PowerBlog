@@ -1,13 +1,10 @@
-function aviso() {
+/*function aviso() {
   alert("Essa pagina esta em manutenção");
-}
+}*/
 
 const linksSocialMedia = {
   github: "ricardojaj",
-  youtube: "ricardojaj",
-  facebook: "ricardojaj",
-  instagram: "ricardo.jaj",
-  twitter: "ricardojaj",
+  linkedin: "in/ricardo-jesus-1582a318b/",
 };
 
 function changeSocialMediaLinks() {
@@ -21,6 +18,7 @@ function changeSocialMediaLinks() {
 changeSocialMediaLinks();
 
 function getGitHubProfileInfos() {
+  // Puxando informações do meu user no github diretamente da api do github
   const url = `https://api.github.com/users/${linksSocialMedia.github}`;
 
   //feth pega o json(ele nao sabe que é um json) e transforma em json
